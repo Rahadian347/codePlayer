@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CodePlayer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div id="logo">
+            CodePlayer
+            <br>
+            <p>By: Rahadian P</p>
+        </div>
+        <div id="buttonContainer">
+            <div class="toggleButton active" id="html">HTML</div>
+            <div class="toggleButton" id="css">CSS</div>
+            <div class="toggleButton" id="js">JAVASCRIPT</div>
+            <div class="toggleButton active" id="output">OUTPUT</div>
+        </div>
+    </div>
+    <div id ="bodyContainer">
+        <div id="title">
+            <div id="htmlTitle" class="titleEditor">Edit Your HTHML below :</div>
+            <div id="cssTitle" class="titleEditor hiddenTitle">Edit Your CSS Below :</div>
+            <div id="jsTitle" class="titleEditor hiddenTitle">Edit Your JS Below :</div>
+            <div id="outputTitle" class="titleEditor">Here it's your Output :</div>
+        </div>
+
+        <textarea id="htmlPanel" class="panel"><h1 id="h1">This is HTML</h1></textarea>
+       
+        <textarea id="cssPanel" class="panel hidden">h1 {color: green;}</textarea>
+       
+        <textarea id="jsPanel" class="panel hidden">document.getElementById("h1").innerHTML = document.getElementById("h1").innerHTML + " and This is JS"</textarea>
+        
+        <iframe id="outputPanel" class="panel"></iframe>
+    </div>
+   
+
+
+    <script type="text/javascript" src="main.js">
+    </script>
+
+</body>
+
+</html>
